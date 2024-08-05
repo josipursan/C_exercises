@@ -75,7 +75,7 @@ int main()
         rowptr[row] = (int*)malloc(ncols * sizeof(int));
         if(rowptr[row] == NULL)
         {
-            printf("rowptr[%d] malloca failed\n", row);
+            printf("rowptr[%d] malloc failed\n", row);
             exit(0);
         }
         printf("\n%d         %p         %d", row, rowptr[row], rowptr[row]);
@@ -108,6 +108,92 @@ int main()
 // METHOD 4
 /*
     This method will make the 2D array take up a contiguous block of memory, unlike METHOD 3.
+    We will allocate a block of memory to hold the whole array first. Then we create an array of pointers to point to each row.
+    Even though an array of pointers is still being used, the actual array is contiguous in memory.
+
+    aptr is array that takes up memory for all necessary elements (5*8 = 40 in our example here).
     
+    rptr is a pointer to pointer, so pointer that is looking at an array.
+    How do we point each rptr to different "rows" in aptr?
+    Each row in aptr is separated by a certain number of elements forming that row. Which elements form up a row? Columns!
+    So, each row is separated by COLS elements.
+    In order to jump from one row to the next one in aptr, we need to move in aptr by COLS*row, row being the row we want to enter.
+    That is why we point the rptr like this : rptr[k] = aptr + (k*cols); k being iterator going over all possible rows.
+
+    There is also a graph/schematic for this you should check out.
  */
+
+ /*int main()
+ {
+    int **rptr;
+    int *aptr;
+    int *testptr;
+    int k;
+    int nrows = 5;  // Although nrows and ncols are fixed here, imagine they are being evaluated at run time
+    int ncols = 8;
+    int row, col;
+
+    //Let us now allocate memory for the array
+    aptr = malloc(nrows * ncols * sizeof(int));
+    if(aptr == NULL)
+    {
+        printf("aptr malloc issue\n");
+        exit(0);
+    }
+
+    ///Now we will allocate room for the pointers to the rows
+    rptr = malloc(nrows * sizeof(int*));
+    if(rptr == NULL)
+    {
+        printf("rptr malloc issue\n");
+        exit(0);
+    }
+
+    //Now we will point the pointers to the rows
+    for(k = 0; k < nrows; k++)
+    {
+        rptr[k] = aptr + (k*ncols);
+    }
+
+    //Now we illustrate how the row pointers are incremented
+    printf("\n\nIllustrating how row pointers are incremented");
+    printf("\n\nIndex   Pointer(hex)  Diff.(dec)");
+
+    for (row = 0; row < nrows; row++)
+    {
+        printf("\n%d         %p", row, rptr[row]);
+        if (row > 0)
+        printf("              %d",(rptr[row] - rptr[row-1]));
+    }
+    printf("\n\nAnd now we print out the array\n");
+
+    for(row = 0; row < nrows; row++)
+    {
+        for(col = 0; col < ncols; col++)
+        {
+            rptr[row][col] = row*col;
+        }
+    }
+
+    for(row = 0; row < nrows; row++)
+    {
+        for(col = 0; col < ncols; col++)
+        {
+            printf("rptr[%d][%d] : %d\n", row, col, rptr[row][col]);
+        }
+    }
+
+    //Now we will demonstrate that this is actually a contiguous block of memory
+    testptr = aptr;
+    for(row = 0; row<nrows; row++)
+    {
+        for(col = 0; col < ncols; col++)
+        {
+            printf("row : %d col : %d val : %d\n", row, col, *(testptr++));
+        }
+        putchar('\n');
+    }
+
+    return 0;
+ }*/
 
