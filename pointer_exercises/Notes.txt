@@ -1,0 +1,110 @@
+https://github.com/jflaherty/ptrtut13/blob/master/md/ch1x.md
+
+Always remember to think in terms of lvalue and rvalue.
+k = 5 --> k is lvalue, 5 is rvalue.
+What is lvalue? It is effectively the address where the rvalue should be stored.
+
+e.g. 
+int k = 5;
+int j;
+j = k;
+
+For the j=k operation, address of j is lvalue, to which we ascribe the rvalue found in lvalue k, ie. the compiler knows that we want assign value found in memory addres k to the variable j,
+and to do that it resolved k lvalue.
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+int *ptr
+    -ptr is the name of the variable
+    -* informs the compiler that we want a pointer variable (ie. to set aside however many bytes are necessary to store an address in memory)
+    -int says we intend to use our pointer variable to store address of an integer
+
+ptr = &k;
+    -We have stored address (lvalue) of variable k in ptr
+    -What does the & operator do? It retrieves the lvalue (address) of k
+    -now we can say that pointer ptr points to variable k
+
+*ptr = 7;
+    -* here represents the dereferencing operator
+    -What does it do? It will copy the rvalue (7) to the variable to which it points to (variable k)
+
+_______________________________________________________________________
+
+Operator precedence
+https://en.cppreference.com/w/c/language/operator_precedence
+https://stackoverflow.com/questions/18481740/pointer-expressions-ptr-ptr-and-ptr
+
+
+printf("my_array[%d] : %d\ti : %d\n", i, my_array[i], i);
+- - - - - - - - - - - - - - - - - - - - 
+
+printf("*ptr + %d : %d\n", i, *(ptr+i));
+This is probably the cleanest approach - move ptr by i, and dereference it
+- - - - - - - - - - - - - - - - - - - - 
+
+printf("*ptr++ : %d\n", *ptr++);
+*ptr++ gets actually grouped as *(p++)
+
+If you look at the operator_precedence link, you will notice that suffix/postfix increment/decrement operation has the priority over dereference operator.
+What is actually ptr++? It is actually the value of ptr, not ptr++. (e.g. ptr = 5; printing ptr++ will again print 5, but the ++ operation guarantees that ptr will be incremented some time before any other access to ptr is done)
+
+- - - - - - - - - - - - - - - - - - - - 
+
+printf("*(++ptr): %d\n", *(++ptr));
+printf("*++ptr : %d\n", *++ptr);
+
+Prefix increment/decrement operator, and dereference operator, belong to the same precedence category.
+When two operators have the same precedence level, associativity becomes important.
+
+Prefix increment and dereference operator have right-left associativity.
+Because of this, ptr is going to be grouped with the rightmost operator, which is ++ in this case.
+Therefore, expression gets grouped like this : *(++ptr)
+
+*(++ptr) and *(ptr++) might strike you as being similar/same, but the are NOT.
+What is the difference? 
+
+    *(++ptr) gets value of p after increment.
+    *(ptr++) gets value of p before increment.
+- - - - - - - - - - - - - - - - - - - - 
+
+*ptr++ --> dereference the operator (get the current value ptr is pointing to), and after that increment the operator
+
+*++ptr --> increment the value of ptr (ie. the address ptr is pointing to), and then dereference it (ie. get the actual value ptr is pointing to)
+
+- - - - - - - - - - - - - - - - - - - - 
+
+For a demonstration of this, check out the operator_precedence.c example.
+______________________________________________________________________
+
+https://github.com/jflaherty/ptrtut13/blob/master/md/ch3x.md
+
+
+char my_string[50] = {'S', 'R', '7', '1', '\0'};
+char my_string_2[50] = "SR71";
+
+Using double quotes instead of the single quotes automatically appends the nul character (\0).
+
+______________________________________________________________________
+
+https://github.com/jflaherty/ptrtut13/blob/master/md/ch4x.md
+
+Wherever we use a[i] notation, we can also use *(a+i). (compiler should create the same code in both cases)
+Because operations are commutative, *(a+i) and *(i+a) result in the same behaviour, ie. traversing array a using index i. However, this is just a curiousity, disregard it.
+
+______________________________________________________________________
+
+https://github.com/jflaherty/ptrtut13/blob/master/md/ch5x.md
+
+In the original C standard (Kernighan and Ritchie, 1st edition) passing structures as arguments was not possible - only a pointer to structure could be passed as an argument.
+In ANSI C passing a whole strucutre as an argument was made possible.
+
+______________________________________________________________________
+
+https://github.com/jflaherty/ptrtut13/blob/master/md/ch7x.md
+
+______________________________________________________________________
+
+https://github.com/jflaherty/ptrtut13/blob/master/md/ch8x.md
+
+______________________________________________________________________
+
+https://github.com/jflaherty/ptrtut13/blob/master/md/ch9x.md
