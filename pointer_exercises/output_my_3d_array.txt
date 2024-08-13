@@ -1,0 +1,270 @@
+i = 0
+j = 0
+k = 0
+val : 0
+add : 0x55bed8ca6320
+
+i = 0
+j = 0
+k = 1
+val : 0
+add : 0x55bed8ca6324
+
+i = 0
+j = 0
+k = 2
+val : 0
+add : 0x55bed8ca6328
+
+i = 0
+j = 1
+k = 0
+val : 0
+add : 0x55bed8ca6340
+
+i = 0
+j = 1
+k = 1
+val : 0
+add : 0x55bed8ca6344
+
+i = 0
+j = 1
+k = 2
+val : 0
+add : 0x55bed8ca6348
+
+i = 0
+j = 2
+k = 0
+val : 0
+add : 0x55bed8ca6360
+
+i = 0
+j = 2
+k = 1
+val : 0
+add : 0x55bed8ca6364
+
+i = 0
+j = 2
+k = 2
+val : 0
+add : 0x55bed8ca6368
+
+i = 1
+j = 0
+k = 0
+val : 0
+add : 0x55bed8ca6380
+
+i = 1
+j = 0
+k = 1
+val : 0
+add : 0x55bed8ca6384
+
+i = 1
+j = 0
+k = 2
+val : 0
+add : 0x55bed8ca6388
+
+i = 1
+j = 1
+k = 0
+val : 0
+add : 0x55bed8ca63a0
+
+i = 1
+j = 1
+k = 1
+val : 1
+add : 0x55bed8ca63a4
+
+i = 1
+j = 1
+k = 2
+val : 2
+add : 0x55bed8ca63a8
+
+i = 1
+j = 2
+k = 0
+val : 0
+add : 0x55bed8ca63c0
+
+i = 1
+j = 2
+k = 1
+val : 2
+add : 0x55bed8ca63c4
+
+i = 1
+j = 2
+k = 2
+val : 4
+add : 0x55bed8ca63c8
+
+i = 2
+j = 0
+k = 0
+val : 0
+add : 0x55bed8ca63e0
+
+i = 2
+j = 0
+k = 1
+val : 0
+add : 0x55bed8ca63e4
+
+i = 2
+j = 0
+k = 2
+val : 0
+add : 0x55bed8ca63e8
+
+i = 2
+j = 1
+k = 0
+val : 0
+add : 0x55bed8ca6400
+
+i = 2
+j = 1
+k = 1
+val : 2
+add : 0x55bed8ca6404
+
+i = 2
+j = 1
+k = 2
+val : 4
+add : 0x55bed8ca6408
+
+i = 2
+j = 2
+k = 0
+val : 0
+add : 0x55bed8ca6420
+
+i = 2
+j = 2
+k = 1
+val : 4
+add : 0x55bed8ca6424
+
+i = 2
+j = 2
+k = 2
+val : 8
+add : 0x55bed8ca6428
+
+i : 0	Depth address : 0x55bed8ca62a0
+j : 0	Rows address : 0x55bed8ca62c0
+k : 0	Cols address : 0x55bed8ca6320
+
+i : 0	Depth address : 0x55bed8ca62a0
+j : 0	Rows address : 0x55bed8ca62c0
+k : 1	Cols address : 0x55bed8ca6324
+
+i : 0	Depth address : 0x55bed8ca62a0
+j : 0	Rows address : 0x55bed8ca62c0
+k : 2	Cols address : 0x55bed8ca6328
+
+i : 0	Depth address : 0x55bed8ca62a0
+j : 1	Rows address : 0x55bed8ca62c8
+k : 0	Cols address : 0x55bed8ca6340
+
+i : 0	Depth address : 0x55bed8ca62a0
+j : 1	Rows address : 0x55bed8ca62c8
+k : 1	Cols address : 0x55bed8ca6344
+
+i : 0	Depth address : 0x55bed8ca62a0
+j : 1	Rows address : 0x55bed8ca62c8
+k : 2	Cols address : 0x55bed8ca6348
+
+i : 0	Depth address : 0x55bed8ca62a0
+j : 2	Rows address : 0x55bed8ca62d0
+k : 0	Cols address : 0x55bed8ca6360
+
+i : 0	Depth address : 0x55bed8ca62a0
+j : 2	Rows address : 0x55bed8ca62d0
+k : 1	Cols address : 0x55bed8ca6364
+
+i : 0	Depth address : 0x55bed8ca62a0
+j : 2	Rows address : 0x55bed8ca62d0
+k : 2	Cols address : 0x55bed8ca6368
+
+i : 1	Depth address : 0x55bed8ca62a8
+j : 0	Rows address : 0x55bed8ca62e0
+k : 0	Cols address : 0x55bed8ca6380
+
+i : 1	Depth address : 0x55bed8ca62a8
+j : 0	Rows address : 0x55bed8ca62e0
+k : 1	Cols address : 0x55bed8ca6384
+
+i : 1	Depth address : 0x55bed8ca62a8
+j : 0	Rows address : 0x55bed8ca62e0
+k : 2	Cols address : 0x55bed8ca6388
+
+i : 1	Depth address : 0x55bed8ca62a8
+j : 1	Rows address : 0x55bed8ca62e8
+k : 0	Cols address : 0x55bed8ca63a0
+
+i : 1	Depth address : 0x55bed8ca62a8
+j : 1	Rows address : 0x55bed8ca62e8
+k : 1	Cols address : 0x55bed8ca63a4
+
+i : 1	Depth address : 0x55bed8ca62a8
+j : 1	Rows address : 0x55bed8ca62e8
+k : 2	Cols address : 0x55bed8ca63a8
+
+i : 1	Depth address : 0x55bed8ca62a8
+j : 2	Rows address : 0x55bed8ca62f0
+k : 0	Cols address : 0x55bed8ca63c0
+
+i : 1	Depth address : 0x55bed8ca62a8
+j : 2	Rows address : 0x55bed8ca62f0
+k : 1	Cols address : 0x55bed8ca63c4
+
+i : 1	Depth address : 0x55bed8ca62a8
+j : 2	Rows address : 0x55bed8ca62f0
+k : 2	Cols address : 0x55bed8ca63c8
+
+i : 2	Depth address : 0x55bed8ca62b0
+j : 0	Rows address : 0x55bed8ca6300
+k : 0	Cols address : 0x55bed8ca63e0
+
+i : 2	Depth address : 0x55bed8ca62b0
+j : 0	Rows address : 0x55bed8ca6300
+k : 1	Cols address : 0x55bed8ca63e4
+
+i : 2	Depth address : 0x55bed8ca62b0
+j : 0	Rows address : 0x55bed8ca6300
+k : 2	Cols address : 0x55bed8ca63e8
+
+i : 2	Depth address : 0x55bed8ca62b0
+j : 1	Rows address : 0x55bed8ca6308
+k : 0	Cols address : 0x55bed8ca6400
+
+i : 2	Depth address : 0x55bed8ca62b0
+j : 1	Rows address : 0x55bed8ca6308
+k : 1	Cols address : 0x55bed8ca6404
+
+i : 2	Depth address : 0x55bed8ca62b0
+j : 1	Rows address : 0x55bed8ca6308
+k : 2	Cols address : 0x55bed8ca6408
+
+i : 2	Depth address : 0x55bed8ca62b0
+j : 2	Rows address : 0x55bed8ca6310
+k : 0	Cols address : 0x55bed8ca6420
+
+i : 2	Depth address : 0x55bed8ca62b0
+j : 2	Rows address : 0x55bed8ca6310
+k : 1	Cols address : 0x55bed8ca6424
+
+i : 2	Depth address : 0x55bed8ca62b0
+j : 2	Rows address : 0x55bed8ca6310
+k : 2	Cols address : 0x55bed8ca6428
+

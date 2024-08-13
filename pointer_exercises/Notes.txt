@@ -108,3 +108,23 @@ https://github.com/jflaherty/ptrtut13/blob/master/md/ch8x.md
 ______________________________________________________________________
 
 https://github.com/jflaherty/ptrtut13/blob/master/md/ch9x.md
+
+Note to self : example for 3D arrays given by tutorial creator was for me really unintuitive.
+Therefore, I wrote my_3D_array.c.
+output_my_3D_array.txt is the accompanying file showing the array contents, and array addresses.
+
+I guess that the unintuitive part comes from the section of code where he assigns starting addresses for each row to pointers.
+This makes sense if you really want to have it all in one continuous chunk of memory - then you have to make that jump between appropriate layers and rows/cols (however you choose to navigate)
+to assign appropriate starting addresses for layers, and especially for rows.
+______________________________________________________________________
+
+https://github.com/jflaherty/ptrtut13/blob/master/md/ch10x.md
+
+Examples for this chapter can be found in bubble.c.
+
+Consider the problem - there are different classes of data you want to sort : arrays of ints, arrays of arrays, arrays of chars, string, etc.
+The algortihm of sorting is the same, irregardles of the data. Therefore, it would be stupid to write sorting function for each data type possible.
+
+NOTE : author of this tutorial dissected the necessary changes very nicely, but, for brevity, and to avoid confusing yourself once you take a look at this again
+(presumably at some point in time when you've already forgotten it all :D), you will have covered only the first bubble sort example, and the last one demostrating what
+function pointers are.
